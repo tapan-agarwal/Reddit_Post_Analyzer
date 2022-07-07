@@ -1,0 +1,796 @@
+[
+   {
+      "kind":"Listing",
+      "data":{
+         "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+         "dist":1,
+         "children":[
+            {
+               "kind":"t3",
+               "data":{
+                  "approved_at_utc":null,
+                  "subreddit":"HomeServer",
+                  "selftext":"Hey folks, I've been interested in taking on a home server project for a while and have finally found the time to start delving into it properly. I just wanted the community to weigh in on my plans and let me know if I'm on the right track with things. So without further ado, here we go.\n\n**Requirements - Key**\n\n* Network storage for my home desktop and laptop\n* Secure storage of backups of certain files and folders on my desktop and laptop (daily backups of some files, weekly backups of others)\n* Replace Dropbox (accessible from my Android phone)\n* Room to add more drives and more RAM if future requirements change\n\n**Requirements - Desirable**\n\n* Stream media for 1 - 3 users simultaneously\n\n**Proposed Part List**\n\nhttps://au.pcpartpicker.com/list/srqcPV\n\n* The case allows plenty of room for expansion (8 HDD bays)\n* Mobo + CPU combo should allow for up to 6 HDDs + an NVME SSD\n* The SSD will be used for the OS and other core appllications\n* I believe the CPU should allow for software video transcoding if required (?)\n\n**Proposed Software**\n\n* OS: FreeNAS\n* Plugin: NextCloud\n* Plugin: Plex\n\n\nI'm not super invested in having the media server as I can already stream Netflix to my Chromecast and don't really watch shows too often anyway. It's something I'd like the option to be able to do if this setup would allow me to without changing anything.\n\nPlease let me know your thoughts or feelings about my build, as well as any words of wisdom anyone might have for a beginner.\n\nCheers!",
+                  "user_reports":[
+                     
+                  ],
+                  "saved":false,
+                  "mod_reason_title":null,
+                  "gilded":0,
+                  "clicked":false,
+                  "title":"Build Advice",
+                  "link_flair_richtext":[
+                     
+                  ],
+                  "subreddit_name_prefixed":"r/HomeServer",
+                  "hidden":false,
+                  "pwls":6,
+                  "link_flair_css_class":null,
+                  "downs":0,
+                  "thumbnail_height":null,
+                  "top_awarded_type":null,
+                  "parent_whitelist_status":"all_ads",
+                  "hide_score":false,
+                  "name":"t3_lnf399",
+                  "quarantine":false,
+                  "link_flair_text_color":"dark",
+                  "upvote_ratio":0.78,
+                  "author_flair_background_color":null,
+                  "subreddit_type":"public",
+                  "ups":5,
+                  "total_awards_received":0,
+                  "media_embed":{
+                     
+                  },
+                  "thumbnail_width":null,
+                  "author_flair_template_id":null,
+                  "is_original_content":false,
+                  "author_fullname":"t2_8bp0q",
+                  "secure_media":null,
+                  "is_reddit_media_domain":false,
+                  "is_meta":false,
+                  "category":null,
+                  "secure_media_embed":{
+                     
+                  },
+                  "link_flair_text":null,
+                  "can_mod_post":false,
+                  "score":5,
+                  "approved_by":null,
+                  "author_premium":false,
+                  "thumbnail":"self",
+                  "edited":false,
+                  "author_flair_css_class":null,
+                  "author_flair_richtext":[
+                     
+                  ],
+                  "gildings":{
+                     
+                  },
+                  "content_categories":null,
+                  "is_self":true,
+                  "mod_note":null,
+                  "created":1613767789.0,
+                  "link_flair_type":"text",
+                  "wls":6,
+                  "removed_by_category":null,
+                  "banned_by":null,
+                  "author_flair_type":"text",
+                  "domain":"self.HomeServer",
+                  "allow_live_comments":false,
+                  "selftext_html":"&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey folks, I&amp;#39;ve been interested in taking on a home server project for a while and have finally found the time to start delving into it properly. I just wanted the community to weigh in on my plans and let me know if I&amp;#39;m on the right track with things. So without further ado, here we go.&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Requirements - Key&lt;/strong&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;Network storage for my home desktop and laptop&lt;/li&gt;\n&lt;li&gt;Secure storage of backups of certain files and folders on my desktop and laptop (daily backups of some files, weekly backups of others)&lt;/li&gt;\n&lt;li&gt;Replace Dropbox (accessible from my Android phone)&lt;/li&gt;\n&lt;li&gt;Room to add more drives and more RAM if future requirements change&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Requirements - Desirable&lt;/strong&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;Stream media for 1 - 3 users simultaneously&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Proposed Part List&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\"https://au.pcpartpicker.com/list/srqcPV\"&gt;https://au.pcpartpicker.com/list/srqcPV&lt;/a&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;The case allows plenty of room for expansion (8 HDD bays)&lt;/li&gt;\n&lt;li&gt;Mobo + CPU combo should allow for up to 6 HDDs + an NVME SSD&lt;/li&gt;\n&lt;li&gt;The SSD will be used for the OS and other core appllications&lt;/li&gt;\n&lt;li&gt;I believe the CPU should allow for software video transcoding if required (?)&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Proposed Software&lt;/strong&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;OS: FreeNAS&lt;/li&gt;\n&lt;li&gt;Plugin: NextCloud&lt;/li&gt;\n&lt;li&gt;Plugin: Plex&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;I&amp;#39;m not super invested in having the media server as I can already stream Netflix to my Chromecast and don&amp;#39;t really watch shows too often anyway. It&amp;#39;s something I&amp;#39;d like the option to be able to do if this setup would allow me to without changing anything.&lt;/p&gt;\n\n&lt;p&gt;Please let me know your thoughts or feelings about my build, as well as any words of wisdom anyone might have for a beginner.&lt;/p&gt;\n\n&lt;p&gt;Cheers!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+                  "likes":null,
+                  "suggested_sort":null,
+                  "banned_at_utc":null,
+                  "view_count":null,
+                  "archived":false,
+                  "no_follow":true,
+                  "is_crosspostable":true,
+                  "pinned":false,
+                  "over_18":false,
+                  "all_awardings":[
+                     
+                  ],
+                  "awarders":[
+                     
+                  ],
+                  "media_only":false,
+                  "can_gild":true,
+                  "spoiler":false,
+                  "locked":false,
+                  "author_flair_text":null,
+                  "treatment_tags":[
+                     
+                  ],
+                  "visited":false,
+                  "removed_by":null,
+                  "num_reports":null,
+                  "distinguished":null,
+                  "subreddit_id":"t5_2sxqm",
+                  "mod_reason_by":null,
+                  "removal_reason":null,
+                  "link_flair_background_color":"",
+                  "id":"lnf399",
+                  "is_robot_indexable":true,
+                  "num_duplicates":0,
+                  "report_reasons":null,
+                  "author":"QuiteMoist",
+                  "discussion_type":null,
+                  "num_comments":7,
+                  "send_replies":true,
+                  "media":null,
+                  "contest_mode":false,
+                  "author_patreon_flair":false,
+                  "author_flair_text_color":null,
+                  "permalink":"/r/HomeServer/comments/lnf399/build_advice/",
+                  "whitelist_status":"all_ads",
+                  "stickied":false,
+                  "url":"https://www.reddit.com/r/HomeServer/comments/lnf399/build_advice/",
+                  "subreddit_subscribers":70636,
+                  "created_utc":1613738989.0,
+                  "num_crossposts":0,
+                  "mod_reports":[
+                     
+                  ],
+                  "is_video":false
+               }
+            }
+         ],
+         "after":null,
+         "before":null
+      }
+   },
+   {
+      "kind":"Listing",
+      "data":{
+         "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+         "dist":null,
+         "children":[
+            {
+               "kind":"t1",
+               "data":{
+                  "total_awards_received":0,
+                  "approved_at_utc":null,
+                  "comment_type":null,
+                  "awarders":[
+                     
+                  ],
+                  "mod_reason_by":null,
+                  "banned_by":null,
+                  "ups":1,
+                  "author_flair_type":"text",
+                  "removal_reason":null,
+                  "link_id":"t3_lnf399",
+                  "author_flair_template_id":null,
+                  "likes":null,
+                  "replies":{
+                     "kind":"Listing",
+                     "data":{
+                        "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+                        "dist":null,
+                        "children":[
+                           {
+                              "kind":"t1",
+                              "data":{
+                                 "total_awards_received":0,
+                                 "approved_at_utc":null,
+                                 "comment_type":null,
+                                 "awarders":[
+                                    
+                                 ],
+                                 "mod_reason_by":null,
+                                 "banned_by":null,
+                                 "ups":1,
+                                 "author_flair_type":"text",
+                                 "removal_reason":null,
+                                 "link_id":"t3_lnf399",
+                                 "author_flair_template_id":null,
+                                 "likes":null,
+                                 "replies":{
+                                    "kind":"Listing",
+                                    "data":{
+                                       "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+                                       "dist":null,
+                                       "children":[
+                                          {
+                                             "kind":"t1",
+                                             "data":{
+                                                "total_awards_received":0,
+                                                "approved_at_utc":null,
+                                                "comment_type":null,
+                                                "awarders":[
+                                                   
+                                                ],
+                                                "mod_reason_by":null,
+                                                "banned_by":null,
+                                                "ups":1,
+                                                "author_flair_type":"text",
+                                                "removal_reason":null,
+                                                "link_id":"t3_lnf399",
+                                                "author_flair_template_id":null,
+                                                "likes":null,
+                                                "replies":{
+                                                   "kind":"Listing",
+                                                   "data":{
+                                                      "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+                                                      "dist":null,
+                                                      "children":[
+                                                         {
+                                                            "kind":"t1",
+                                                            "data":{
+                                                               "total_awards_received":0,
+                                                               "approved_at_utc":null,
+                                                               "comment_type":null,
+                                                               "awarders":[
+                                                                  
+                                                               ],
+                                                               "mod_reason_by":null,
+                                                               "banned_by":null,
+                                                               "ups":1,
+                                                               "author_flair_type":"text",
+                                                               "removal_reason":null,
+                                                               "link_id":"t3_lnf399",
+                                                               "author_flair_template_id":null,
+                                                               "likes":null,
+                                                               "replies":{
+                                                                  "kind":"Listing",
+                                                                  "data":{
+                                                                     "modhash":"613w6axsj129b4ffe4ea9a9156f37ffe4517e3e3bed4f70b4f",
+                                                                     "dist":null,
+                                                                     "children":[
+                                                                        {
+                                                                           "kind":"t1",
+                                                                           "data":{
+                                                                              "total_awards_received":0,
+                                                                              "approved_at_utc":null,
+                                                                              "comment_type":null,
+                                                                              "awarders":[
+                                                                                 
+                                                                              ],
+                                                                              "mod_reason_by":null,
+                                                                              "banned_by":null,
+                                                                              "ups":3,
+                                                                              "author_flair_type":"text",
+                                                                              "removal_reason":null,
+                                                                              "link_id":"t3_lnf399",
+                                                                              "author_flair_template_id":null,
+                                                                              "likes":null,
+                                                                              "replies":"",
+                                                                              "user_reports":[
+                                                                                 
+                                                                              ],
+                                                                              "saved":false,
+                                                                              "id":"go078wv",
+                                                                              "banned_at_utc":null,
+                                                                              "mod_reason_title":null,
+                                                                              "gilded":0,
+                                                                              "archived":false,
+                                                                              "no_follow":true,
+                                                                              "author":"MrHighVoltage",
+                                                                              "can_mod_post":false,
+                                                                              "send_replies":true,
+                                                                              "parent_id":"t1_go04xz7",
+                                                                              "score":3,
+                                                                              "author_fullname":"t2_1ur1wp0u",
+                                                                              "report_reasons":null,
+                                                                              "approved_by":null,
+                                                                              "all_awardings":[
+                                                                                 
+                                                                              ],
+                                                                              "subreddit_id":"t5_2sxqm",
+                                                                              "collapsed":false,
+                                                                              "body":"Yes absolutley! This thing has 4 pretty fast cores with hyperthreading. It is a Haswell CPU and therefore idle power usage is great.\n\nOnly thing about is, that the integrated GPU might not be able to handle 4k or H.265 transcoding, so you are limited to the CPU transcoding!",
+                                                                              "edited":false,
+                                                                              "author_flair_css_class":null,
+                                                                              "is_submitter":false,
+                                                                              "downs":0,
+                                                                              "author_flair_richtext":[
+                                                                                 
+                                                                              ],
+                                                                              "author_patreon_flair":false,
+                                                                              "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Yes absolutley! This thing has 4 pretty fast cores with hyperthreading. It is a Haswell CPU and therefore idle power usage is great.&lt;/p&gt;\n\n&lt;p&gt;Only thing about is, that the integrated GPU might not be able to handle 4k or H.265 transcoding, so you are limited to the CPU transcoding!&lt;/p&gt;\n&lt;/div&gt;",
+                                                                              "gildings":{
+                                                                                 
+                                                                              },
+                                                                              "collapsed_reason":null,
+                                                                              "associated_award":null,
+                                                                              "stickied":false,
+                                                                              "author_premium":false,
+                                                                              "subreddit_type":"public",
+                                                                              "can_gild":true,
+                                                                              "top_awarded_type":null,
+                                                                              "author_flair_text_color":null,
+                                                                              "score_hidden":false,
+                                                                              "permalink":"/r/HomeServer/comments/lnf399/build_advice/go078wv/",
+                                                                              "num_reports":null,
+                                                                              "locked":false,
+                                                                              "name":"t1_go078wv",
+                                                                              "created":1613771343.0,
+                                                                              "subreddit":"HomeServer",
+                                                                              "author_flair_text":null,
+                                                                              "treatment_tags":[
+                                                                                 
+                                                                              ],
+                                                                              "created_utc":1613742543.0,
+                                                                              "subreddit_name_prefixed":"r/HomeServer",
+                                                                              "controversiality":0,
+                                                                              "depth":4,
+                                                                              "author_flair_background_color":null,
+                                                                              "collapsed_because_crowd_control":null,
+                                                                              "mod_reports":[
+                                                                                 
+                                                                              ],
+                                                                              "mod_note":null,
+                                                                              "distinguished":null
+                                                                           }
+                                                                        },
+                                                                        {
+                                                                           "kind":"t1",
+                                                                           "data":{
+                                                                              "total_awards_received":0,
+                                                                              "approved_at_utc":null,
+                                                                              "comment_type":null,
+                                                                              "awarders":[
+                                                                                 
+                                                                              ],
+                                                                              "mod_reason_by":null,
+                                                                              "banned_by":null,
+                                                                              "ups":2,
+                                                                              "author_flair_type":"text",
+                                                                              "removal_reason":null,
+                                                                              "link_id":"t3_lnf399",
+                                                                              "author_flair_template_id":null,
+                                                                              "likes":null,
+                                                                              "replies":"",
+                                                                              "user_reports":[
+                                                                                 
+                                                                              ],
+                                                                              "saved":false,
+                                                                              "id":"go09pxm",
+                                                                              "banned_at_utc":null,
+                                                                              "mod_reason_title":null,
+                                                                              "gilded":0,
+                                                                              "archived":false,
+                                                                              "no_follow":true,
+                                                                              "author":"BrassEnthusiast1",
+                                                                              "can_mod_post":false,
+                                                                              "send_replies":true,
+                                                                              "parent_id":"t1_go04xz7",
+                                                                              "score":2,
+                                                                              "author_fullname":"t2_3bhg6jbu",
+                                                                              "report_reasons":null,
+                                                                              "approved_by":null,
+                                                                              "all_awardings":[
+                                                                                 
+                                                                              ],
+                                                                              "subreddit_id":"t5_2sxqm",
+                                                                              "collapsed":false,
+                                                                              "body":"&gt;4790K \n\nDefinilty use this. Quicksync is a great feature for CPU transcoding if the software supports it.",
+                                                                              "edited":false,
+                                                                              "author_flair_css_class":null,
+                                                                              "is_submitter":false,
+                                                                              "downs":0,
+                                                                              "author_flair_richtext":[
+                                                                                 
+                                                                              ],
+                                                                              "author_patreon_flair":false,
+                                                                              "body_html":"&lt;div class=\"md\"&gt;&lt;blockquote&gt;\n&lt;p&gt;4790K &lt;/p&gt;\n&lt;/blockquote&gt;\n\n&lt;p&gt;Definilty use this. Quicksync is a great feature for CPU transcoding if the software supports it.&lt;/p&gt;\n&lt;/div&gt;",
+                                                                              "gildings":{
+                                                                                 
+                                                                              },
+                                                                              "collapsed_reason":null,
+                                                                              "associated_award":null,
+                                                                              "stickied":false,
+                                                                              "author_premium":false,
+                                                                              "subreddit_type":"public",
+                                                                              "can_gild":true,
+                                                                              "top_awarded_type":null,
+                                                                              "author_flair_text_color":null,
+                                                                              "score_hidden":false,
+                                                                              "permalink":"/r/HomeServer/comments/lnf399/build_advice/go09pxm/",
+                                                                              "num_reports":null,
+                                                                              "locked":false,
+                                                                              "name":"t1_go09pxm",
+                                                                              "created":1613772703.0,
+                                                                              "subreddit":"HomeServer",
+                                                                              "author_flair_text":null,
+                                                                              "treatment_tags":[
+                                                                                 
+                                                                              ],
+                                                                              "created_utc":1613743903.0,
+                                                                              "subreddit_name_prefixed":"r/HomeServer",
+                                                                              "controversiality":0,
+                                                                              "depth":4,
+                                                                              "author_flair_background_color":null,
+                                                                              "collapsed_because_crowd_control":null,
+                                                                              "mod_reports":[
+                                                                                 
+                                                                              ],
+                                                                              "mod_note":null,
+                                                                              "distinguished":null
+                                                                           }
+                                                                        }
+                                                                     ],
+                                                                     "after":null,
+                                                                     "before":null
+                                                                  }
+                                                               },
+                                                               "user_reports":[
+                                                                  
+                                                               ],
+                                                               "saved":false,
+                                                               "id":"go04xz7",
+                                                               "banned_at_utc":null,
+                                                               "mod_reason_title":null,
+                                                               "gilded":0,
+                                                               "archived":false,
+                                                               "no_follow":true,
+                                                               "author":"QuiteMoist",
+                                                               "can_mod_post":false,
+                                                               "send_replies":true,
+                                                               "parent_id":"t1_go044c9",
+                                                               "score":1,
+                                                               "author_fullname":"t2_8bp0q",
+                                                               "report_reasons":null,
+                                                               "approved_by":null,
+                                                               "all_awardings":[
+                                                                  
+                                                               ],
+                                                               "subreddit_id":"t5_2sxqm",
+                                                               "body":"I actually have a 4790K lying around that I was going to sell. Do you think this would be good to pair with a second hand uATX board?\n\nI was specifically looking at this:\nhttps://www.ebay.com.au/itm/Gigabyte-GA-B85M-D3V-Plus-for-Intel-Socket-LGA-1150-Micro-ATX-Motherboard-DDR3/264073715215?hash=item3d7c051e0f:g:aT0AAOSw~llcB2GI\n\nI also have a few sticks of DDR3 lying around that I might as well use also.",
+                                                               "edited":false,
+                                                               "downs":0,
+                                                               "author_flair_css_class":null,
+                                                               "is_submitter":true,
+                                                               "collapsed":false,
+                                                               "author_flair_richtext":[
+                                                                  
+                                                               ],
+                                                               "author_patreon_flair":false,
+                                                               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I actually have a 4790K lying around that I was going to sell. Do you think this would be good to pair with a second hand uATX board?&lt;/p&gt;\n\n&lt;p&gt;I was specifically looking at this:\n&lt;a href=\"https://www.ebay.com.au/itm/Gigabyte-GA-B85M-D3V-Plus-for-Intel-Socket-LGA-1150-Micro-ATX-Motherboard-DDR3/264073715215?hash=item3d7c051e0f:g:aT0AAOSw%7EllcB2GI\"&gt;https://www.ebay.com.au/itm/Gigabyte-GA-B85M-D3V-Plus-for-Intel-Socket-LGA-1150-Micro-ATX-Motherboard-DDR3/264073715215?hash=item3d7c051e0f:g:aT0AAOSw~llcB2GI&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;I also have a few sticks of DDR3 lying around that I might as well use also.&lt;/p&gt;\n&lt;/div&gt;",
+                                                               "gildings":{
+                                                                  
+                                                               },
+                                                               "collapsed_reason":null,
+                                                               "associated_award":null,
+                                                               "stickied":false,
+                                                               "author_premium":false,
+                                                               "subreddit_type":"public",
+                                                               "can_gild":true,
+                                                               "top_awarded_type":null,
+                                                               "author_flair_text_color":null,
+                                                               "score_hidden":false,
+                                                               "permalink":"/r/HomeServer/comments/lnf399/build_advice/go04xz7/",
+                                                               "num_reports":null,
+                                                               "locked":false,
+                                                               "name":"t1_go04xz7",
+                                                               "created":1613769987.0,
+                                                               "subreddit":"HomeServer",
+                                                               "author_flair_text":null,
+                                                               "treatment_tags":[
+                                                                  
+                                                               ],
+                                                               "created_utc":1613741187.0,
+                                                               "subreddit_name_prefixed":"r/HomeServer",
+                                                               "controversiality":0,
+                                                               "depth":3,
+                                                               "author_flair_background_color":null,
+                                                               "collapsed_because_crowd_control":null,
+                                                               "mod_reports":[
+                                                                  
+                                                               ],
+                                                               "mod_note":null,
+                                                               "distinguished":null
+                                                            }
+                                                         }
+                                                      ],
+                                                      "after":null,
+                                                      "before":null
+                                                   }
+                                                },
+                                                "user_reports":[
+                                                   
+                                                ],
+                                                "saved":false,
+                                                "id":"go044c9",
+                                                "banned_at_utc":null,
+                                                "mod_reason_title":null,
+                                                "gilded":0,
+                                                "archived":false,
+                                                "no_follow":true,
+                                                "author":"MrHighVoltage",
+                                                "can_mod_post":false,
+                                                "created_utc":1613740676.0,
+                                                "send_replies":true,
+                                                "parent_id":"t1_go03c7w",
+                                                "score":1,
+                                                "author_fullname":"t2_1ur1wp0u",
+                                                "report_reasons":null,
+                                                "approved_by":null,
+                                                "all_awardings":[
+                                                   
+                                                ],
+                                                "subreddit_id":"t5_2sxqm",
+                                                "body":"About that, I'd recommend you to check the second hand markets. I got a used i5 8400 (which is plenty for my usecase, and it has a GPU integrated for hardware transcoding) pretty cheap and a Gigabyte C246-WU4 as an Amazon Warehouse deal. The i5 was so cheap that i'm currently fine without ECC memory (i only host unimportant stuff for myself), but with the C246 Board i have the option to switch to Xeon and ECC when they become cheap. And it has 10 SATA ports :D\n\nThat is, btw. one of the reasons that speaks for Ryzen (they all don't have official support / validation to run ECC, but it is also not disabled). But be warned, it is actually hard to verify if ECC is actually working or the system is just telling you it uses ECC. For that you need EPIC or Xeon.",
+                                                "edited":false,
+                                                "author_flair_css_class":null,
+                                                "is_submitter":false,
+                                                "downs":0,
+                                                "author_flair_richtext":[
+                                                   
+                                                ],
+                                                "author_patreon_flair":false,
+                                                "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;About that, I&amp;#39;d recommend you to check the second hand markets. I got a used i5 8400 (which is plenty for my usecase, and it has a GPU integrated for hardware transcoding) pretty cheap and a Gigabyte C246-WU4 as an Amazon Warehouse deal. The i5 was so cheap that i&amp;#39;m currently fine without ECC memory (i only host unimportant stuff for myself), but with the C246 Board i have the option to switch to Xeon and ECC when they become cheap. And it has 10 SATA ports :D&lt;/p&gt;\n\n&lt;p&gt;That is, btw. one of the reasons that speaks for Ryzen (they all don&amp;#39;t have official support / validation to run ECC, but it is also not disabled). But be warned, it is actually hard to verify if ECC is actually working or the system is just telling you it uses ECC. For that you need EPIC or Xeon.&lt;/p&gt;\n&lt;/div&gt;",
+                                                "gildings":{
+                                                   
+                                                },
+                                                "collapsed_reason":null,
+                                                "associated_award":null,
+                                                "stickied":false,
+                                                "author_premium":false,
+                                                "subreddit_type":"public",
+                                                "can_gild":true,
+                                                "top_awarded_type":null,
+                                                "author_flair_text_color":null,
+                                                "score_hidden":false,
+                                                "permalink":"/r/HomeServer/comments/lnf399/build_advice/go044c9/",
+                                                "num_reports":null,
+                                                "locked":false,
+                                                "name":"t1_go044c9",
+                                                "created":1613769476.0,
+                                                "subreddit":"HomeServer",
+                                                "author_flair_text":null,
+                                                "treatment_tags":[
+                                                   
+                                                ],
+                                                "collapsed":false,
+                                                "subreddit_name_prefixed":"r/HomeServer",
+                                                "controversiality":0,
+                                                "depth":2,
+                                                "author_flair_background_color":null,
+                                                "collapsed_because_crowd_control":null,
+                                                "mod_reports":[
+                                                   
+                                                ],
+                                                "mod_note":null,
+                                                "distinguished":null
+                                             }
+                                          }
+                                       ],
+                                       "after":null,
+                                       "before":null
+                                    }
+                                 },
+                                 "user_reports":[
+                                    
+                                 ],
+                                 "saved":false,
+                                 "id":"go03c7w",
+                                 "banned_at_utc":null,
+                                 "mod_reason_title":null,
+                                 "gilded":0,
+                                 "archived":false,
+                                 "no_follow":true,
+                                 "author":"QuiteMoist",
+                                 "can_mod_post":false,
+                                 "send_replies":true,
+                                 "parent_id":"t1_go02j7l",
+                                 "score":1,
+                                 "author_fullname":"t2_8bp0q",
+                                 "report_reasons":null,
+                                 "approved_by":null,
+                                 "all_awardings":[
+                                    
+                                 ],
+                                 "subreddit_id":"t5_2sxqm",
+                                 "collapsed":false,
+                                 "body":"Oh yeah, the prices on PCPartPicker are based on the Amazon price for some reason. The store I'd be buying from (umart) is less than half that cost.\n\nThis actually answers a major question I had. I'd been wondering why just about every single build I came across featured Intel when AMD seems to be the standard for gaming rigs right now. I might see what Intel core/board I can pick up for cheap and redo the build.\n\nThanks for your input, I'll be sure to check out Proxmox also :)",
+                                 "edited":false,
+                                 "author_flair_css_class":null,
+                                 "is_submitter":true,
+                                 "downs":0,
+                                 "author_flair_richtext":[
+                                    
+                                 ],
+                                 "author_patreon_flair":false,
+                                 "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Oh yeah, the prices on PCPartPicker are based on the Amazon price for some reason. The store I&amp;#39;d be buying from (umart) is less than half that cost.&lt;/p&gt;\n\n&lt;p&gt;This actually answers a major question I had. I&amp;#39;d been wondering why just about every single build I came across featured Intel when AMD seems to be the standard for gaming rigs right now. I might see what Intel core/board I can pick up for cheap and redo the build.&lt;/p&gt;\n\n&lt;p&gt;Thanks for your input, I&amp;#39;ll be sure to check out Proxmox also :)&lt;/p&gt;\n&lt;/div&gt;",
+                                 "gildings":{
+                                    
+                                 },
+                                 "collapsed_reason":null,
+                                 "associated_award":null,
+                                 "stickied":false,
+                                 "author_premium":false,
+                                 "subreddit_type":"public",
+                                 "can_gild":true,
+                                 "top_awarded_type":null,
+                                 "author_flair_text_color":null,
+                                 "score_hidden":false,
+                                 "permalink":"/r/HomeServer/comments/lnf399/build_advice/go03c7w/",
+                                 "num_reports":null,
+                                 "locked":false,
+                                 "name":"t1_go03c7w",
+                                 "created":1613768971.0,
+                                 "subreddit":"HomeServer",
+                                 "author_flair_text":null,
+                                 "treatment_tags":[
+                                    
+                                 ],
+                                 "created_utc":1613740171.0,
+                                 "subreddit_name_prefixed":"r/HomeServer",
+                                 "controversiality":0,
+                                 "depth":1,
+                                 "author_flair_background_color":null,
+                                 "collapsed_because_crowd_control":null,
+                                 "mod_reports":[
+                                    
+                                 ],
+                                 "mod_note":null,
+                                 "distinguished":null
+                              }
+                           }
+                        ],
+                        "after":null,
+                        "before":null
+                     }
+                  },
+                  "user_reports":[
+                     
+                  ],
+                  "saved":false,
+                  "id":"go02j7l",
+                  "banned_at_utc":null,
+                  "mod_reason_title":null,
+                  "gilded":0,
+                  "archived":false,
+                  "no_follow":true,
+                  "author":"MrHighVoltage",
+                  "can_mod_post":false,
+                  "send_replies":true,
+                  "parent_id":"t3_lnf399",
+                  "score":1,
+                  "author_fullname":"t2_1ur1wp0u",
+                  "report_reasons":null,
+                  "approved_by":null,
+                  "all_awardings":[
+                     
+                  ],
+                  "subreddit_id":"t5_2sxqm",
+                  "body":"That Ryzen is seriously overpriced. In general, i would advice you to go Intel for a Home-Server build. Why? This thing is probably idling most of the time, and that is where Intel CPUs are very good. Power draw of Intel CPUs go below 3W in idle, while Ryzen stays at 10 to 15W. Thats not the world, but still, 10W less while idling.\n\nYour Software selection is great, i use Nextcloud (and Owncloud before that) for years now and it has always been fine. Maybe consider Proxmox as host OS if you want to experiement around with virtual machines. But i think even FreeNAS can run VMs, so no big issue here. If you generally don't plan on doing this and just use your server as a NAS, then FreeNAS is fine! In this case i would probably go further and save even more on the CPU. (probably also consider those boards with Intel Atom/Celeron soldered on. They use so little power but they are typically limited to 2 to 4 SATA ports)\n\nAnother thing about proxmox: Containers (LXC). Those are lightweight \"VMs\" (not actually VMs) that do not run a kernel on their own but \"reuse\" the system kernel. Great for running Linux-based applications without the overhead of a complete OS in a VM.",
+                  "edited":false,
+                  "downs":0,
+                  "author_flair_css_class":null,
+                  "is_submitter":false,
+                  "collapsed":false,
+                  "author_flair_richtext":[
+                     
+                  ],
+                  "author_patreon_flair":false,
+                  "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;That Ryzen is seriously overpriced. In general, i would advice you to go Intel for a Home-Server build. Why? This thing is probably idling most of the time, and that is where Intel CPUs are very good. Power draw of Intel CPUs go below 3W in idle, while Ryzen stays at 10 to 15W. Thats not the world, but still, 10W less while idling.&lt;/p&gt;\n\n&lt;p&gt;Your Software selection is great, i use Nextcloud (and Owncloud before that) for years now and it has always been fine. Maybe consider Proxmox as host OS if you want to experiement around with virtual machines. But i think even FreeNAS can run VMs, so no big issue here. If you generally don&amp;#39;t plan on doing this and just use your server as a NAS, then FreeNAS is fine! In this case i would probably go further and save even more on the CPU. (probably also consider those boards with Intel Atom/Celeron soldered on. They use so little power but they are typically limited to 2 to 4 SATA ports)&lt;/p&gt;\n\n&lt;p&gt;Another thing about proxmox: Containers (LXC). Those are lightweight &amp;quot;VMs&amp;quot; (not actually VMs) that do not run a kernel on their own but &amp;quot;reuse&amp;quot; the system kernel. Great for running Linux-based applications without the overhead of a complete OS in a VM.&lt;/p&gt;\n&lt;/div&gt;",
+                  "gildings":{
+                     
+                  },
+                  "collapsed_reason":null,
+                  "associated_award":null,
+                  "stickied":false,
+                  "author_premium":false,
+                  "subreddit_type":"public",
+                  "can_gild":true,
+                  "top_awarded_type":null,
+                  "author_flair_text_color":null,
+                  "score_hidden":false,
+                  "permalink":"/r/HomeServer/comments/lnf399/build_advice/go02j7l/",
+                  "num_reports":null,
+                  "locked":false,
+                  "name":"t1_go02j7l",
+                  "created":1613768431.0,
+                  "subreddit":"HomeServer",
+                  "author_flair_text":null,
+                  "treatment_tags":[
+                     
+                  ],
+                  "created_utc":1613739631.0,
+                  "subreddit_name_prefixed":"r/HomeServer",
+                  "controversiality":0,
+                  "depth":0,
+                  "author_flair_background_color":null,
+                  "collapsed_because_crowd_control":null,
+                  "mod_reports":[
+                     
+                  ],
+                  "mod_note":null,
+                  "distinguished":null
+               }
+            },
+            {
+               "kind":"t1",
+               "data":{
+                  "total_awards_received":0,
+                  "approved_at_utc":null,
+                  "comment_type":null,
+                  "awarders":[
+                     
+                  ],
+                  "mod_reason_by":null,
+                  "banned_by":null,
+                  "ups":1,
+                  "author_flair_type":"text",
+                  "removal_reason":null,
+                  "link_id":"t3_lnf399",
+                  "author_flair_template_id":null,
+                  "likes":null,
+                  "replies":"",
+                  "user_reports":[
+                     
+                  ],
+                  "saved":false,
+                  "id":"go092ae",
+                  "banned_at_utc":null,
+                  "mod_reason_title":null,
+                  "gilded":0,
+                  "archived":false,
+                  "no_follow":true,
+                  "author":"BrassEnthusiast1",
+                  "can_mod_post":false,
+                  "send_replies":true,
+                  "parent_id":"t3_lnf399",
+                  "score":1,
+                  "author_fullname":"t2_3bhg6jbu",
+                  "report_reasons":null,
+                  "approved_by":null,
+                  "all_awardings":[
+                     
+                  ],
+                  "subreddit_id":"t5_2sxqm",
+                  "body":"If you can find one, I would go for the Define 7 case. Holds more drives (16) vs that Node (8) for the same price as you see in your build list, and you have the flexibility of full size mobos.\n\nIve owned that Node case before, its pretty large, might as well get the full atx IMO.\n\n&amp;#x200B;\n\nIf your going to do CPU video transcoding, consider intel for the quicksync. You'll get a core dedicated to video processing.",
+                  "edited":1613743993.0,
+                  "downs":0,
+                  "author_flair_css_class":null,
+                  "is_submitter":false,
+                  "collapsed":false,
+                  "author_flair_richtext":[
+                     
+                  ],
+                  "author_patreon_flair":false,
+                  "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;If you can find one, I would go for the Define 7 case. Holds more drives (16) vs that Node (8) for the same price as you see in your build list, and you have the flexibility of full size mobos.&lt;/p&gt;\n\n&lt;p&gt;Ive owned that Node case before, its pretty large, might as well get the full atx IMO.&lt;/p&gt;\n\n&lt;p&gt;&amp;#x200B;&lt;/p&gt;\n\n&lt;p&gt;If your going to do CPU video transcoding, consider intel for the quicksync. You&amp;#39;ll get a core dedicated to video processing.&lt;/p&gt;\n&lt;/div&gt;",
+                  "gildings":{
+                     
+                  },
+                  "collapsed_reason":null,
+                  "associated_award":null,
+                  "stickied":false,
+                  "author_premium":false,
+                  "subreddit_type":"public",
+                  "can_gild":true,
+                  "top_awarded_type":null,
+                  "author_flair_text_color":null,
+                  "score_hidden":false,
+                  "permalink":"/r/HomeServer/comments/lnf399/build_advice/go092ae/",
+                  "num_reports":null,
+                  "locked":false,
+                  "name":"t1_go092ae",
+                  "created":1613772351.0,
+                  "subreddit":"HomeServer",
+                  "author_flair_text":null,
+                  "treatment_tags":[
+                     
+                  ],
+                  "created_utc":1613743551.0,
+                  "subreddit_name_prefixed":"r/HomeServer",
+                  "controversiality":0,
+                  "depth":0,
+                  "author_flair_background_color":null,
+                  "collapsed_because_crowd_control":null,
+                  "mod_reports":[
+                     
+                  ],
+                  "mod_note":null,
+                  "distinguished":null
+               }
+            }
+         ],
+         "after":null,
+         "before":null
+      }
+   }
+]

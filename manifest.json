@@ -1,0 +1,36 @@
+{
+  "name": "Reddit Post Analyser",
+  "version": "0.1",
+  "description": "Program to analyse and visualise data on individual Reddit posts.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/ui/popup.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "src/scripts/process_json.js",
+      "src/scripts/main.js",
+      "src/scripts/contextmenus.js"
+    ],
+    "persistent": false
+  },
+  "web_accessible_resources": ["src/ui/modal.html", "modal.html", "src/ui/infographic.html", "infographic.html"],
+  "content_security_policy":
+    "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js; object-src 'self'",
+  "browser_action": {},
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://reddit.com/*",
+    "http://api.pushshift.io/*",
+    "contextMenus",
+    "file://*/*"
+  ]
+}

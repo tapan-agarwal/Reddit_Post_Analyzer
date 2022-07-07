@@ -1,0 +1,18 @@
+{
+    "name": "RedditPostAnalyserStandalone",
+    "version": "1.0.0",
+    "description": "Standalone CMD application running on Node.js to process Reddit posts and produce JSON data for the Reddit Post Analyser web extension.",
+    "main": "src/scripts/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "generate-docs": "node_modules/.bin/jsdoc src/ -r -c jsdoc.json --readme README.md -t node_modules/docdash"
+    },
+    "bin": {},
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "docdash": "^1.2.0",
+        "jsdoc": "^3.6.6",
+        "xmlhttprequest": "^1.8.0"
+    }
+}

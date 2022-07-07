@@ -1,0 +1,41 @@
+.rpa_modal {
+  display: Block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.rpa_modal-content {
+  background-color: #fefefe;
+  margin: 5px 10px;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: verdana;
+}
+
+/* The Close Button */
+.rpa_modal_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rpa_modal_close:hover,
+.rpa_modal_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rpa_modal_info_button {
+  color:blue;
+}

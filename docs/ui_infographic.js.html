@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>ui/infographic.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Infographic_Infographic.html">Infographic</a></li></ul><h3>Namespaces</h3><ul><li><a href="ChromeExtension.html">ChromeExtension</a><ul class='methods'><li data-type='method'><a href="ChromeExtension.html#.generateTimeCharts">generateTimeCharts</a></li><li data-type='method'><a href="ChromeExtension.html#.ImportJSON">ImportJSON</a></li><li data-type='method'><a href="ChromeExtension.html#.main">main</a></li><li data-type='method'><a href="ChromeExtension.html#.parseJSON">parseJSON</a></li><li data-type='method'><a href="ChromeExtension.html#.Popup">Popup</a></li></ul></li><li></li><li></li><li></li><li><a href="NodeStandalone.html">NodeStandalone</a><ul class='methods'><li data-type='method'><a href="NodeStandalone.html#.receiveJSON">receiveJSON</a></li><li data-type='method'><a href="NodeStandalone.html#.saveOutputData">saveOutputData</a></li><li data-type='method'><a href="NodeStandalone.html#.start_processing">start_processing</a></li></ul></li><li><a href="Processing.html">Processing</a><ul class='methods'><li data-type='method'><a href="Processing.html#.download_raw">download_raw</a></li><li data-type='method'><a href="Processing.html#.extract_urls">extract_urls</a></li><li data-type='method'><a href="Processing.html#.handle_http_response">handle_http_response</a></li><li data-type='method'><a href="Processing.html#.process_links">process_links</a></li><li data-type='method'><a href="Processing.html#.process_meta">process_meta</a></li><li data-type='method'><a href="Processing.html#.process_raw">process_raw</a></li><li data-type='method'><a href="Processing.html#.process_reposts">process_reposts</a></li><li data-type='method'><a href="Processing.html#.recurseComments">recurseComments</a></li><li data-type='method'><a href="Processing.html#.retry_request">retry_request</a></li><li data-type='method'><a href="Processing.html#.setAsync">setAsync</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ui/infographic.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+export class Infographic {
+
+    /**
+    * This constructor creates the chart itself and surrounding HTML such as dropdown buttons.
+    * @param {string} chart_id - The id of the chart.
+    * @param {string} chartType - The type of the chart, i.e line, pie or donut.
+    * @param {string} title - The title of the infographic.
+    * @param {int} width - The width of a chart.
+    * @param {int} height - The height of a chart.
+    * @param {object} data - The data to be inserted into a given chart.
+    */
+    constructor(chart_id, chartType, title, width, height, data) {
+        if (constructor === 'Infographic') {
+            throw new Error("Cannot instantiate abstract class \"Infographic\".");
+        }
+
+        this.context = null;
+        this.chart = null;
+        this.updateAnimation = false;
+
+        this.typename = chartType;
+        this.data = data;
+        this.dropdowns = [];
+        this.dindex = 0;
+
+        /** References to HTML objects */
+        this.dropdown = null;
+        this.container = null;
+
+        /** Canvas generation */
+        if (chart_id === "donut"){
+          var allCharts = document.getElementById("donut_chart");
+        } else if (chart_id === "pie"){
+          var allCharts = document.getElementById("pie_chart");
+        } else if (chart_id === "line"){
+          var allCharts = document.getElementById("line_chart");
+        } else {
+          var allCharts = document.getElementById("overflow_charts");
+        }
+
+        this.container = document.createElement("div");
+        this.container.class = "container";
+        this.container.style = "max-width: 800px; margin: 50px auto;";
+
+        this.container.innerHTML =
+        "&lt;div>\n" +
+        "&lt;h2 style=\"font-size: 24pt\">" + title + "&lt;/h2>\n" +
+        "&lt;canvas id=\"" + chart_id + "\" width=\"" + width + "\" height=\"" + height + "\">&lt;/canvas>" +
+        "&lt;/div>";
+
+        /** Dropdown generation for charts with more than one option. */
+        if (this.data.length > 1) {
+            this.dropdown = document.createElement("label");
+
+            this.dropdown.innerHTML = "Choose data type:\n";
+            allCharts.appendChild(this.dropdown);
+
+            var selector = document.createElement("select");
+
+            // TODO: are these needed? (don't think they need to be these names, might not be needed at all, originally for testing - Tom)
+            selector.class = "charts";
+            selector.name = "ice-cream";
+            selector.id = "chartSelect";
+
+            for (var i = 0; i &lt; this.data.length; i++) {
+                selector.innerHTML = selector.innerHTML + "&lt;option value=\"" + this.data[i].name + "\">" + this.data[i].name + "&lt;/option>\n";
+            }
+
+            var infographic = this;
+            selector.onchange = function(change_event) {
+                var selected = change_event.target.value;
+
+                for (var i = 0; i &lt; infographic.data.length; i++) {
+                    if (selected === infographic.data[i].name){
+                        if (infographic.chart != null) {
+                            infographic.chart.destroy();
+                        }
+                        // Populate the chart
+                        infographic.populate(i);
+                        break;
+                    }
+                }
+
+            };
+
+            this.dropdown.appendChild(selector);
+        }
+
+        allCharts.appendChild(this.container);
+        this.context = document.getElementById(chart_id);
+
+        /** Populate with default data */
+        this.populate(this.dindex);
+    }
+
+    /** This function populates the chart with the specified option index
+    * @param {int} index - The data type option index of the chart.
+    */
+    populate(index) {
+        if (this.data.length > 0 &amp;&amp; this.data[index].datasets != null &amp;&amp; this.data[index].datasets.length > 0) {
+            this.dindex = index;
+            this.stopDrawing();
+            this.chart = new Chart(this.context, {
+                type: this.typename,
+                data: {
+                    labels: this.data[index].labels,
+                    datasets: this.data[index].datasets
+                },
+                options: this.data[index].options
+            });
+        } else {
+            this.startDrawing();
+        }
+    }
+
+    /** This function starts drawing the loading animation */
+    startDrawing() {
+        // TODO: Check if data is being loaded. If so, show spinning wheel; otherwise show "No data available".
+        var canvas = this.context.getContext("2d");
+        canvas.save();
+        this.updateAnimation = true;
+        var infographic = this;
+        window.requestAnimationFrame(function () { infographic.drawLoading(); });
+    }
+
+    /** Stop drawing the loading animation */
+    stopDrawing() {
+        this.updateAnimation = false;
+    }
+
+    /** Draw a frame of the loading animation */
+    drawLoading() {
+        var canvas = this.context.getContext("2d");
+        var halfDim = { w: this.context.width / 2, h: this.context.height / 2 };
+
+        canvas.globalCompositeOperation = 'destination-over';
+        canvas.clearRect(0, 0, halfDim.w * 2, halfDim.h * 2);
+        canvas.fillStyle = 'rgba(0, 255, 255, 1)';
+        canvas.strokeStyle = 'rgba(200, 200, 200, 1)';
+        canvas.save();
+
+        var loadingSpinSpeed = 1;
+        var loadingDotRadius = 8;
+        var loadingWheelRadius = 32;
+
+        /** Loading wheel */
+        var time = (new Date()).getMilliseconds();
+        var deltaTime = (time - this.lastTime) / 1000;
+        for (var i = 0, count = 1; i &lt; count; i++) {
+            var trans = {
+                x: halfDim.w - loadingWheelRadius - loadingDotRadius,
+                y: halfDim.h - loadingWheelRadius - loadingDotRadius
+            };
+
+
+            canvas.translate(trans.x, trans.y);
+            canvas.rotate((2 * Math.PI) * deltaTime * loadingSpinSpeed);
+
+            /** Draw loading dot */
+            canvas.beginPath();
+            canvas.arc(loadingWheelRadius, 0, loadingDotRadius, 0, 2 * Math.PI);
+            canvas.fill();
+            canvas.translate(-trans.x, -trans.y);
+
+
+            /** Draw wheel */
+            canvas.beginPath();
+            canvas.arc(trans.x, trans.y, loadingWheelRadius, 0, 2 * Math.PI);
+            canvas.lineWidth = loadingDotRadius * 2;
+            canvas.stroke();
+        }
+        this.lastTime = time;
+
+        if (this.updateAnimation) {
+            var infographic = this;
+            window.requestAnimationFrame(function () { infographic.drawLoading(); });
+        } else {
+            canvas.restore();
+        }
+    }
+    /** Update the infographic with new data */
+    update(data) {
+        this.data = data;
+        this.populate(this.dindex);
+    }
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Wed Apr 28 2021 16:38:32 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

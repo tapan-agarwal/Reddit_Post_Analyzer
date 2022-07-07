@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit Post Analyser</title>
+    <link rel="stylesheet" href="content.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  </head>
+  <body>
+
+    <div id="title_date"></div>
+
+
+    <div id="all_charts_scripts">
+      <script src = "line.js" type="module" id = "lineCss"></script>
+      <script src = "donut.js" type = "module"></script>
+      <script src = "pie.js" type = "module"></script>
+    </div>
+
+    <div id = "info_and_line">
+      <div>
+        <div id="info"></div>
+        <h2><a id="export">Export JSON</a></h2>
+        <script src="export_json.js"></script>
+      </div>
+      <div id = "line_chart"></div>
+    </div>
+    <div id = "pieDonut">
+      <script id="show_links" src="generate_links.js"></script>
+      <div id = "donut_chart"></div>
+      <div id = "pie_chart"></div>
+    </div>
+
+    <div id="overflow_charts"></div>
+
+    <script src="generate_html.js"></script>
+
+  </body>
+
+  <br />
+  <footer>
+    <a href="https://github.com/SpectralCascade/RedditPostAnalyser" target="_blank">Learn more</a>
+  </footer>
+</html>
