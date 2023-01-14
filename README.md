@@ -23,4 +23,4 @@ As a standalone command line application:
 
 ## Documentation
 
-All documentation can be found at [https://spectralcascade.github.io/RedditPostAnalyser/](https://spectralcascade.github.io/RedditPostAnalyser/)
+
