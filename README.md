@@ -21,6 +21,6 @@ As a standalone command line application:
 2. Run `npm install` in the root repository directory
 3. Once installed, run `node . <reddit post URL(s)> -o .` to process reddit posts and output to JSON files in the current directory.
 
-## Documentation
+
 
 
